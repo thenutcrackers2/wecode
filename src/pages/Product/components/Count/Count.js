@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Count.scss";
 
-const Count = () => {
-  const [count, setCount] = useState(1);
+const Count = (props) => {
+  const { count, setCount } = props;
 
   const handleCount = (num) => {
     if (count === 1 && num === -1) return;
